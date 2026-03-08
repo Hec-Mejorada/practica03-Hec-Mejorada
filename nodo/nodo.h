@@ -1,6 +1,10 @@
 #ifndef __NODO_H__
 #define __NODO_H__
+#include <stdio.h>
 
+struct Nodo {
+   int valor;
+};
 /* Declaración incompleta del tipo Nodo (tipo opaco) */
 typedef struct Nodo Nodo;
 
