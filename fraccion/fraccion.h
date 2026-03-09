@@ -1,8 +1,6 @@
 #ifndef __FRACCION_H__
 #define __FRACCION_H__
 
-#ifndef FRACCION_H
-#define FRACCION_H
 
 typedef struct{
     int num;
