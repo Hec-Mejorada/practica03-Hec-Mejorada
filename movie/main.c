@@ -1,42 +1,27 @@
 #include <stdio.h>
 #include "pelicula.h"
 
+
 int main()
 {
-
     printf("Prueba del TAD Pelicula\n");
 
-    /* TODO
-       Crear una película
-    */
-    Pelicula* p = NULL;
+    Pelicula* p = crearPelicula("Titanic", 1997, "Drama");
 
+    if (p == NULL)
+        return 1;
 
-    /* TODO
-       Agregar algunos directores
-    */
+    agregarDirector(p, "Wachowski");
 
-
-    /* TODO
-       Imprimir película
-    */
-
+    imprimir(p);
 
     printf("\nCambiar genero\n");
 
-    /* TODO
-       Cambiar genero
-    */
+    cambiarGenero(p, "Accion");
 
+    imprimir(p);
 
-    /* TODO
-       Imprimir nuevamente
-    */
-
-
-    /* TODO
-       Liberar memoria
-    */
+    destruir(p);
 
     return 0;
 }
